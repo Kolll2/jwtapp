@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/jwtapp
+    username: root
+    password: root
+jwt:
+  token:
+    secret: jwtapp
+    expired: 3600000
